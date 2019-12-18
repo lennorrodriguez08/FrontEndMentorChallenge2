@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+<header>
+    <div class="main">
+        <div class="sub-main">
+            <p class="main-cta">Learn to code by<br/> watching others</p>
+            <p class="secondary-cta">See how experienced developers solve problems&nbsp;in real-time. Watching scripted&nbsp;tutorials&nbsp;is great,
+            but understanding&nbsp;how&nbsp;developers&nbsp;think&nbsp;is&nbsp;<span>invaluable.</span></p>
+        </div>
+        <div class="info">
+           <div class="top-info">
+              <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+           </div>
+           <div>
+               <form action="">
+                   <input type="text" placeholder="First Name" required maxlength="36">
+                   <p class="warning-first">First Name cannot be empty</p>
+                   <input type="text" placeholder="Last Name" required maxlength="36">
+                   <p class="warning-first">Last Name cannot be empty</p>
+                   <input type="email" placeholder="Email Address" required>
+                   <p class="warning-first">Looks like this is not an email</p>
+                   <input type="password" placeholder="Password" required>
+                   <p class="warning-first">Password cannot be empty</p>
+                   <button>CLAIM YOUR FREE TRIAL</button>
+                   <p>By clicking the button, you are agreeing to our&nbsp;<span>Terms&nbsp;and&nbsp;Services</span></p>
+               </form>
+           </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  Learn to code by watching others
+
+  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+
+  Try it free 7 days then $20/mo. thereafter
+
+  First Name 
+  Last Name 
+  Email Address
+  Password
+
+  Claim your free trial 
+
+  By clicking the button, you are agreeing to our Terms and Services
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    box-sizing: border-box;
+    min-width: 370px;
+    max-width: 1440px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.main {
+    min-height: 100vh;
+    background-image: url(images/bg-intro-desktop.png);
+    background-position: center;
+    background-color: #FF7978;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sub-main {
+    width: 500px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.main-cta {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 600;
+    padding-bottom: 17px;
+}
+
+.secondary-cta {
+    font-size: 14px;
+}
+
+.info {
+    width: 460px;
+    padding: 10px;
+}
+
+.top-info {
+    font-size: 13px;
+    width: 100%;
+    background: #5D54A3;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 0;;
+    border-radius: 7px;
+    box-shadow: 0px 6px 0px 0px #D96667;
+}
+
+.top-info span {
+    font-weight: 600;
+}
+
+div form {
+    background: #FFFFFF;
+    margin-top: 20px;
+    padding: 20px 23px 20px 23px;
+    border-radius: 5px;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    margin-top: 15px;
+    height: 45px;
+}
+
+form input::placeholder {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 3px;
+    background: #37CC8A;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid #37CC8A;
+    box-shadow: 0px 3px 0px 0px #38B17C;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+form p {
+    font-size: 10px;
+    text-align: center;
+    color: #AAAAAA;
+    padding: 16px 30px 8px 30px;
+}
+
+form span {
+    color: #EC7879;
+    font-weight: bold;
+}
+
+.warning-first {
+    font-size: 11px;
+    font-weight: normal;
+    padding: 8px 3px 0 0;
+    color: #EC7879;
+    text-align: right;
+    font-style: italic;
+    
+}
+
+.warning-last {
+    font-size: 11px;
+    font-weight: normal;
+    padding: 8px 3px 0 0;
+    color: #EC7879;
+    text-align: right;
+    font-style: italic;
+    display: none;
+}
+
+.warning-email {
+    font-size: 11px;
+    font-weight: normal;
+    padding: 8px 3px 0 0;
+    color: #EC7879;
+    text-align: right;
+    font-style: italic;
+    display: none;
+}
+
+.warning-password {
+    font-size: 11px;
+    font-weight: normal;
+    padding: 8px 3px 0 0;
+    color: #EC7879;
+    text-align: right;
+    font-style: italic;
+    display: none;
+}
+
+/*
+input[type="text"], input[type="email"], input[type="password"] {
+    background-image: url(images/icon-error.png);
+    background-repeat: no-repeat;
+    background-position: right 5px top 7px;
+    
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 999px) {
+    .main {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    
+    .sub-main {
+        text-align: center;
+    }
+    
+    .secondary-cta {
+        padding-top: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .main-cta {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    .secondary-cta span {
+        display: block;
+    }
+    
+    .top-info {
+        padding-left: 79px;
+        padding-right: 79px;
+        margin-top: 35px;
+    }
+    
+    .info {
+    padding: 22px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    
+}
+
+
